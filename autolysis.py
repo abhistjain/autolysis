@@ -13,6 +13,10 @@
 import os  # For interacting with the operating system (e.g., file paths)
 import sys  # For system-specific parameters and functions (e.g., exit codes)
 import httpx  # For making HTTP requests to the API
+
+if response.status_code == 404:
+    print("404: Not Found")
+
 import pandas as pd  # For data manipulation and analysis
 import seaborn as sns  # For data visualization (statistical plotting)
 import matplotlib.pyplot as plt  # For creating static, animated, and interactive visualizations
